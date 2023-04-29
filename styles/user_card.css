@@ -1,0 +1,79 @@
+.card {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  
+  .card:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .card-header {
+    background-color: #c62828;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-text {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .btn-delete {
+    background-color: #c62828;
+    color: #fff;
+    border-color: #c62828;
+  }
+  
+  .btn-delete:hover {
+    background-color: #b71c1c;
+    border-color: #b71c1c;
+  }
+
+  button {
+    background-color: #b71c1c;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #b71c1c;
+  }
+
+
+  
+  #search-input  {
+    border: 3px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #000000, #000000 50%, #dc3545 50%, #dc3545);
+    padding: 10px;
+    animation-name: border-anim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes border-anim {
+    0% {border-image-source: linear-gradient(to right, #000000, #000000 50%, #dc3545 50%, #dc3545);}
+    25% {border-image-source: linear-gradient(to right, #dc3545, #dc3545 50%, #000000 50%, #000000);}
+    50% {border-image-source: linear-gradient(to right, #000000, #000000 50%, #dc3545 50%, #dc3545);}
+    75% {border-image-source: linear-gradient(to right, #dc3545, #dc3545 50%, #000000 50%, #000000);}
+    100% {border-image-source: linear-gradient(to right, #000000, #000000 50%, #dc3545 50%, #dc3545);}
+  }

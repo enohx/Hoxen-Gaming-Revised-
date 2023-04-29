@@ -1,0 +1,104 @@
+header{
+    background-color: black;
+}
+
+main{
+    padding-left: 2vh;
+    padding-right: 10vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.about{
+    width: 60%;
+    height: 70%;
+    padding: 5vh;
+    margin: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #ff3838,
+              0 0 0.8rem #ff3838,
+              0 0 2.8rem #ff3838,
+              inset 0 0 1.3rem #ff3838;
+    animation: pulsate 1.5s infinite alternate; 
+}
+
+.about .imageHolder{
+    width: 200px;
+    height: 47vh;
+    border-radius: 50px;
+}
+
+.about .imageHolder img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 50px;
+}
+
+.about .textHolder{
+ width: 60%;
+ height: fit-content;
+ color: silver;
+ 
+ padding: 2vh;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-size: larger;
+ font-weight: bolder;
+ border-radius: 30px;
+ background: radial-gradient(circle, rgba(157,27,27,1) 19%, rgba(107,7,16,1) 85%, rgba(0,0,0,1) 100%);
+ box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #7c0202,
+              0 0 0.8rem #7c0202,
+              0 0 2.8rem #7c0202,
+              inset 0 0 1.3rem #7c0202;
+ 
+
+}
+
+.about .textHolder h1{
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+
+  
+  @keyframes pulsate {
+      
+    100% {
+  
+        box-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 7px #fff,
+        0 0 15px #841818,
+        0 0 30px #841818,
+        0 0 35px #841818,
+        0 0 44px #841818,
+        0 0 55px #841818;
+    
+    }
+    
+    0% {
+  
+      box-shadow:
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 3px #fff,
+      0 0 5px #841818,
+      0 0 18px #841818,
+      0 0 20px #841818,
+      0 0 25px #841818,
+      0 0 30px #841818;
+  
+  }} 

@@ -1,0 +1,13 @@
+
+  body {
+    overflow: hidden; /* disable scrolling on the body */
+  }
+  
+  #scrollable {
+    max-height: 90%; /* set a max height for the scrollable div */
+    overflow-y: scroll; /* enable vertical scrolling for the div */
+  }
+
+  #scrollable::-webkit-scrollbar {
+    display: none;
+  }
